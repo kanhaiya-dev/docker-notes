@@ -425,3 +425,9 @@ $ docker run --name mylocal-pg -d -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@cloud
 	- Username: postgres
 	- Password: postgres
 	- Click save
+
+
+## Build docker image with Maven and Google JIB
+```sh
+mvn compile jib:dockerBuild
+```
