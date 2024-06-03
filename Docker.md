@@ -431,3 +431,16 @@ $ docker run --name mylocal-pg -d -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@cloud
 ```sh
 mvn compile jib:dockerBuild
 ```
+
+
+## Clean Architecture Build Image
+
+```sh
+$ docker build -f <path-to-Dockerfile> -t <image-name> .
+```
+
+### Example
+```sh
+$ docker build -f src/Clean.Architecture.API/Dockerfile -t burber-img .
+$ docker run -p 8080:8080 --name burber-t burber-img
+```
