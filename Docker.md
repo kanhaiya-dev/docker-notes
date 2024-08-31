@@ -444,3 +444,8 @@ $ docker build -f <path-to-Dockerfile> -t <image-name> .
 $ docker build -f src/Clean.Architecture.API/Dockerfile -t burber-img .
 $ docker run -p 8080:8080 --name burber-t burber-img
 ```
+
+### Run docker-compose in AspNetCore
+```sh
+$ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+```
